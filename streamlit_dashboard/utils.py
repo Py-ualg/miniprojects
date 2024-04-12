@@ -18,15 +18,15 @@ def runModel(dataset):
     return kmeans, X_train, X_test, y_train, y_test
 
 
-def plotClusters(kmeans, X_train:np.ndarray, y_train: np.ndarray):
+def plotClusters(kmeans, X_train:np.ndarray, y_train: np.ndarray, xcol, ycol):
     #convert X_train to a dataframe
     X_train = pd.DataFrame(X_train, columns=['sepal.length', 'sepal.width', 'petal.length', 'petal.width'])
     fig, ax = plt.subplots(1, 2, figsize=(10, 8), sharey=True)
 
     # put ax as attribute to the scatterplot function
-    sns.scatterplot(x='sepal.length', y='sepal.width',
+    sns.scatterplot(x=xcol, y=ycol,
                     data=X_train, ax=ax[0])
-    sns.scatterplot(x='sepal.length', y='sepal.width',
+    sns.scatterplot(x=xcol, y=ycol,
                     data=X_train, hue=kmeans.labels_,
                     palette='viridis', ax=ax[0])
     sns.scatterplot(x=kmeans.cluster_centers_[:, 0],
@@ -34,7 +34,7 @@ def plotClusters(kmeans, X_train:np.ndarray, y_train: np.ndarray):
                     s=100, color='red', label='Centroids', ax=ax[0])
     
     # plot the ground truth clusters
-    sns.scatterplot(x='sepal.length', y='sepal.width',
+    sns.scatterplot(x=xcol, y=ycol,
                     data=X_train, hue=y_train,
                     palette='viridis', ax=ax[1])
     return fig
