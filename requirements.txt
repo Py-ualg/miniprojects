@@ -1,9 +1,8 @@
-# gemerate requiremnets modules for the project
-pandas,
-numpy,
-matplotlib,
-seaborn,
-scikit-learn,
-pandas_datapackage_reader,
-wbgapi,
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+pandas_datapackage_reader
+wbgapi
 tqdm
