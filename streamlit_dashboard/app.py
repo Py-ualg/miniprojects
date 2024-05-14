@@ -5,7 +5,7 @@ import pandas as pd
 __author__ = "David Palecek"
 __email__ = "david@stanka.de"
 
-df = pd.read_csv('data/iris.csv')  # load the iris dataset
+df = pd.read_csv('streamlit_dashboard/data/iris.csv')  # load the iris dataset
 kmeans, X_train, X_test, y_train, y_test = runModel(df)  # run the model
 labels = ['Virginica', 'Setosa', 'Versicolor']  # labels for the clusters
 
