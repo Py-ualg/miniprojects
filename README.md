@@ -15,3 +15,17 @@ You can open the repository in server-hosted online environment, [Binder](https:
 3. r2py
     * In 2022, introductory course to R has been given by [@ramiromagno](https://github.com/ramiromagno) and [@iduarte](https://github.com/iduarte) at CCMAR using cute synthetic *crab* dataset. All resources in R can be found [here](https://rmagno.eu/tdvr.oct.22/).
     * This project translates and compares how the same things are done using python, specifically `pandas`.
+
+
+## Geeksessions  2024 May 22
+1. Clone the miniprojects repository
+2. Go to [streamlit](https://streamlit.io)
+3. Sign in with GH, gmail or other
+    * If you want to run dashboard from your organization, follow instructions [here](https://docs.github.com/en/organizations/managing-oauth-access-to-your-organizations-data/about-oauth-app-access-restrictions)
+4. Create app
+    * repo: .../miniprojects
+    * branch: geeks-240522
+    * Main file-path: streamlit_dashboard/app.py
+    * app URL: UP-TO-YOU
+5. You should have the app functional and running
+
