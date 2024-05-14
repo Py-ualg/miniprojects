@@ -17,7 +17,7 @@ You can open the repository in server-hosted online environment, [Binder](https:
     * This project translates and compares how the same things are done using python, specifically `pandas`.
 
 
-## Geeksessions  2024 May 22
+## Geeksessions 2024 May 22
 1. Clone the miniprojects repository
 2. Go to [streamlit](https://streamlit.io)
 3. Sign in with GH, gmail or other
@@ -28,4 +28,8 @@ You can open the repository in server-hosted online environment, [Binder](https:
     * Main file-path: streamlit_dashboard/app.py
     * app URL: UP-TO-YOU
 5. You should have the app functional and running
+
+### Running locally
+* `pip install streamlit`
+* `streamlit run streamlit_dashboard/app.py`
 
